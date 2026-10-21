@@ -13,18 +13,18 @@ package part10;
 // SECTION B — COMMENTS: when you finish, put a // comment ABOVE every line of code,
 //    saying in YOUR OWN WORDS what that line does. The README shows an example.
 
-public class ArrayBasics {
-    public static void main(String[] args) {
-        String car = "Camaro";
-        String[] cars = {"Camaro", "Corvette", "Tesla"};
+public class ArrayBasics { // define the class named ArrayBasics
+    public static void main(String[] args) { // main method where execution starts
+        String car = "Camaro"; // store a single car name in a regular variable
+        String[] cars = {"Camaro", "Corvette", "Tesla"}; // create an array holding multiple car names
 
-        cars[0] = "Mustang";
-        System.out.println(cars[0]);
+        cars[0] = "Mustang"; // change the first item in the array to Mustang
+        System.out.println(cars[0]); // print the first item in the array
 
-        System.out.println(cars[1]);
-        System.out.println(cars[2]);
-        for (int i = 0; i < cars.length; i++) {
-            System.out.println(cars[i]);
-        }
-    }
-}
+        System.out.println(cars[1]); // print the second item in the array
+        System.out.println(cars[2]); // print the third item in the array
+        for (int i = 0; i < cars.length; i++) { // loop through the array from start to finish
+            System.out.println(cars[i]); // print each car in the array during the loop
+        } // end of for loop
+    } // end of main method
+} // end of class
