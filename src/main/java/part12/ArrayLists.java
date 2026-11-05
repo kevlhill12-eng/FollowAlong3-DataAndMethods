@@ -16,26 +16,36 @@ import java.util.ArrayList;
 //    saying in YOUR OWN WORDS what that line does. The README shows an example.
 
 public class ArrayLists {
+    // Declares the public class named ArrayLists
     public static void main(String[] args){
+        // Main method where program execution begins
         ArrayList<String> food = new ArrayList<String>();
+        // Creates a new ArrayList of Strings named 'food'
         food.add("pizza");
+        // Adds "pizza" to the end of the list
         food.add("hamburger");
+        // Adds "hamburger" to the end of the list
         food.add("hotdog");
-
+        // Adds "hotdog" to the end of the list
 
         for (int i = 0; i < food.size(); i++){
+            // Loops through each element in the ArrayList from index 0 to size - 1
             System.out.println(food.get(i));
+            // Prints the element at the current index 'i'
         }
         food.set(0, "sushi");
+        // Replaces the element at index 0 ("pizza") with "sushi"
         System.out.println(food);
+        // Prints the entire ArrayList showing the updated elements
 
         food.remove(2);
+        // Removes the element at index 2 ("hotdog") from the list
         System.out.println(food);
+        // Prints the updated ArrayList after removal
 
         food.clear();
+        // Removes all elements from the ArrayList, leaving it empty
         System.out.println(food);
-
-
+        // Prints the empty ArrayList
     }
-
 }

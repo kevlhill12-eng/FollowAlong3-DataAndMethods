@@ -15,19 +15,31 @@ import java.util.ArrayList;
 //    saying in YOUR OWN WORDS what that line does. The README shows an example.
 
 public class ForEachLoop {
+    // Declares the public class named ForEachLoop
     public static void main(String[] args) {
+        // Main method where program execution begins
         String[] animals = {"cat", "dog", "rat", "bird"};
+        // Declares and initializes a String array named 'animals' with four elements
         for (String i : animals ){
+            // Starts a for-each loop to iterate through each element 'i' in the 'animals' array
             System.out.println(i);
+            // Prints the current animal element to the console
         }
         ArrayList<String> animalList = new ArrayList<String>();
+        // Creates a new ArrayList of Strings named 'animalList'
         animalList.add("cat");
+        // Adds "cat" to the end of the ArrayList
         animalList.add("dog");
+        // Adds "dog" to the end of the ArrayList
         animalList.add("rat");
+        // Adds "rat" to the end of the ArrayList
         animalList.add("bird");
+        // Adds "bird" to the end of the ArrayList
 
         for (String i : animalList){
+            // Starts a for-each loop to iterate through each element 'i' in the 'animalList'
             System.out.println(i);
+            // Prints the current animal element from the list to the console
         }
     }
 }
