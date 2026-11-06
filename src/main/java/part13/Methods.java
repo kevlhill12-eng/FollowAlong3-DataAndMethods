@@ -18,23 +18,43 @@ public class Methods {
 
 
     public static void main(String[] args) {
-       String name = "Bro";
+        // Declares a String variable named 'name' and initializes it with the value "Bro"
+        String name = "Bro";
+
+        // Declares an integer variable named 'age' and initializes it with the value 21
         int age = 21;
+
+        // Declares an integer variable named 'x' and initializes it with the value 3
         int x = 3;
+
+        // Declares an integer variable named 'y' and initializes it with the value 4
         int y = 4;
 
+        // Calls the 'hello' method, passing the 'name' and 'age' variables as arguments
         hello(name, age);
+
+        // Calls the 'add' method with 'x' and 'y', and stores the returned sum in a new integer variable 'z'
         int z = add(x, y);
+
+        // Prints the value stored in variable 'z' (7) to the console
         System.out.println(z);
 
+        // Directly prints the integer value returned by calling the 'add' method with 'x' and 'y'
         System.out.println(add(x, y));
     }
+
+    // Defines a static method named 'hello' that takes a String and an int, and returns nothing (void)
     static void hello(String title, int age){
+        // Prints "Hello " combined with the value of the 'title' parameter
         System.out.println("Hello "+ title);
+
+        // Prints "You are " combined with the value of the 'age' parameter
         System.out.println("You are "+ age);
     }
-    static int add(int x, int y){
 
+    // Defines a static method named 'add' that takes two integers and returns an integer result
+    static int add(int x, int y) {
+        // Adds the two parameters together and returns the calculated sum to the caller
         return x + y;
     }
 }
