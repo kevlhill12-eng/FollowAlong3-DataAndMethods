@@ -16,4 +16,25 @@ package part13;
 
 public class Methods {
 
+
+    public static void main(String[] args) {
+       String name = "Bro";
+        int age = 21;
+        int x = 3;
+        int y = 4;
+
+        hello(name, age);
+        int z = add(x, y);
+        System.out.println(z);
+
+        System.out.println(add(x, y));
+    }
+    static void hello(String title, int age){
+        System.out.println("Hello "+ title);
+        System.out.println("You are "+ age);
+    }
+    static int add(int x, int y){
+
+        return x + y;
+    }
 }
