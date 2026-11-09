@@ -14,15 +14,15 @@ public class Challenge {
     // tag("b", "hi")     should return "<b>hi</b>"
     // tag("i", "Yay")    should return "<i>Yay</i>"
     // tag("h1", "Menu")  should return "<h1>Menu</h1>"
-    public static String tag(String name, String text) {
-        return "";   // YOUR CODE
+    public static String tag(String name, String test) {
+        return "<" + name + ">" + test + "</" + name + ">"; // YOUR CODE
     }
 
     // The same name, but only ONE input. Always use the tag "b".
     // tag("hi")    should return "<b>hi</b>"
     // tag("Wow")   should return "<b>Wow</b>"
-    public static String tag(String text) {
-        return "";   // YOUR CODE
+    public static String tag(String test) {
+        return tag("b", test); // YOUR CODE
     }
 
     // Turn a number into money: a dollar sign and exactly 2 digits after the point.
@@ -32,6 +32,6 @@ public class Challenge {
     // Hint: String.format works exactly like printf, but it RETURNS the text
     //       instead of printing it.
     public static String money(double amount) {
-        return "";   // YOUR CODE
+        return String.format("$%.2f", amount); // YOUR CODE
     }
 }
