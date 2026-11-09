@@ -8,7 +8,55 @@ package part14;
 //
 // There is no main method here yet. Typing it is part of the stretch.
 // Your extra methods (twice, area) go INSIDE this class, but OUTSIDE main.
-
+/*
+3
+5.0
+abab
+     42
+42
+3.1
+1,234,567
+ */
 public class Stretch {
+    public static void main(String[] args) {
+        System.out.println(twice(3));
+        System.out.println(twice(2.5));
+        System.out.println(twice("ab"));
+        System.out.printf("[%5d]\n", 42);
+        System.out.printf("[%-5d]\n", 42);
+        System.out.printf("[%.1f]\n", 3.14159);
+        System.out.printf("[%,d]\n", 1234567);
 
+        String item = "Pizza";
+        int qty = 2;
+        double price = 12.5;
+        System.out.printf("%-10s x%d  $%.2f\n", item, qty, price * qty);
+
+        System.out.printf("Square:     %d%n", area(4));
+        System.out.printf("Rectangle:  %d%n", area(3, 5));
+        System.out.printf("Circle:     %.2f%n", area(2.0));
+    }
+    static int twice(int n) {
+        return n * 2;
+    }
+
+    static double twice(double n) {
+        return n * 2;
+    }
+
+    static String twice(String s) {
+        return s + s;
+    }
+
+    static int area(int side){
+
+        return side*side;
+    }
+    static int area(int width, int height){
+        return width * height;
+
+    }
+    static double area(double radius){
+        return Math.PI * radius * radius;
+    }
 }
