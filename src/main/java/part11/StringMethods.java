@@ -19,7 +19,7 @@ public class StringMethods {
     public static void main(String[] args) {
         // Main method entry point for the Java application
         String name = "Bro";
-        // Declares a String variable 'name' and assigns it "Bro"
+        // Declares a String variable 'name' and assigns it "Bro"s
         boolean equalsResult = name.equals("Bro");
         // Checks if 'name' is exactly equal to "Bro" (case-sensitive) and stores true
         System.out.println(equalsResult);

@@ -23,7 +23,7 @@ public class WrapperClasses {
         Character b = '@';
         // Declares a Character wrapper object 'b' and assigns it '@'
         Integer c = 123;
-        // Declares an Integer wrapper object 'c' and assigns it 123
+        // Declares an Integer wrappers object 'c' and assigns it 123
         Double d = 3.14;
         // Declares a Double wrapper object 'd' and assigns it 3.14
 
