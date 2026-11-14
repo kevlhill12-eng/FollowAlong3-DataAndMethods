@@ -7,7 +7,54 @@ package part11;
 // SECTION C — Stretch. Do Stretch A, then Stretch B. The README says what each one should print.
 //
 // There is no main method here yet. Typing it is part of the stretch.
-
+/*
+4
+a
+2
+JAVA
+Jovo
+false
+true
+Java
+ */
 public class Stretch {
+    public static void main(String[] args) {
+        String word = "Java";
+        System.out.println(word.length());
+        System.out.println(word.charAt(1));
+        System.out.println(word.indexOf("v"));
+        System.out.println(word.toUpperCase());
+        System.out.println(word.replace('a', 'o'));
+        System.out.println(word.equals("java"));
+        System.out.println(word.equalsIgnoreCase("java"));
+        System.out.println(word);
 
+        String city = "  Dover  ";
+        String clean = city.trim();
+        System.out.println(clean.toUpperCase());
+        System.out.println(clean.length());
+        System.out.println(clean.charAt(0));
+
+        Integer apples = 5;
+        Integer oranges = 10;
+        Integer fruit = apples + oranges;
+        Double price = 9.99;
+        Boolean isOpen = true;
+
+        System.out.println("Fruit: " + fruit);
+        System.out.println("Two cost: " + (price * 2));
+        if (isOpen) {
+            System.out.println("The store is open");
+        }
+        String first = "Jordan";
+        String last = "Smith";
+
+        String username = first.toLowerCase().charAt(0) + last.toLowerCase();
+        System.out.println(username);
+        System.out.println(username + "@desu.edu");
+
+
+
+
+    }
 }
